@@ -1,0 +1,132 @@
+{
+  "no_weight": [
+    {
+      "rows": 1,
+      "threads": 1,
+      "custom_us": 0.7091666666666666,
+      "torch_cpu_us": 4.603555666666667,
+      "torch_mps_us": 13.264277666666667,
+      "mlx_gpu_us": 190.81843066666664,
+      "best": "custom"
+    },
+    {
+      "rows": 8,
+      "threads": 1,
+      "custom_us": 2.819722333333333,
+      "torch_cpu_us": 31.192861,
+      "torch_mps_us": 20.791666666666668,
+      "mlx_gpu_us": 190.375361,
+      "best": "custom"
+    },
+    {
+      "rows": 64,
+      "threads": 4,
+      "custom_us": 13.714208333333334,
+      "torch_cpu_us": 85.069847,
+      "torch_mps_us": 63.57791666666667,
+      "mlx_gpu_us": 196.89261133333332,
+      "best": "custom"
+    },
+    {
+      "rows": 256,
+      "threads": 4,
+      "custom_us": 32.696275928297055,
+      "torch_cpu_us": 170.67146798975674,
+      "torch_mps_us": 255.04681498079387,
+      "mlx_gpu_us": 215.61219590268885,
+      "best": "custom"
+    },
+    {
+      "rows": 1024,
+      "threads": 4,
+      "custom_us": 110.63397435897436,
+      "torch_cpu_us": 1138.1707256410257,
+      "torch_mps_us": 1329.5871794871796,
+      "mlx_gpu_us": 329.4379282051282,
+      "best": "custom"
+    },
+    {
+      "rows": 4096,
+      "threads": 4,
+      "custom_us": 575.2744845360825,
+      "torch_cpu_us": 5086.268896907217,
+      "torch_mps_us": 5449.335484536083,
+      "mlx_gpu_us": 777.1181237113402,
+      "best": "custom"
+    },
+    {
+      "rows": 16384,
+      "threads": 4,
+      "custom_us": 2468.236125,
+      "torch_cpu_us": 20087.052083333332,
+      "torch_mps_us": 22699.130208333332,
+      "mlx_gpu_us": 2406.642375,
+      "best": "mlx"
+    }
+  ],
+  "weight": [
+    {
+      "rows": 1,
+      "threads": 1,
+      "custom_us": 0.8699583333333334,
+      "torch_cpu_us": 6.586388666666667,
+      "torch_mps_us": 2.907763666666667,
+      "mlx_gpu_us": 188.90418033333333,
+      "best": "custom"
+    },
+    {
+      "rows": 8,
+      "threads": 1,
+      "custom_us": 3.7811666666666666,
+      "torch_cpu_us": 35.84302766666667,
+      "torch_mps_us": 2.8344446666666667,
+      "mlx_gpu_us": 202.38952799999998,
+      "best": "mps"
+    },
+    {
+      "rows": 64,
+      "threads": 4,
+      "custom_us": 17.922819333333333,
+      "torch_cpu_us": 106.03286133333333,
+      "torch_mps_us": 5.802916666666667,
+      "mlx_gpu_us": 213.307889,
+      "best": "mps"
+    },
+    {
+      "rows": 256,
+      "threads": 4,
+      "custom_us": 43.92859026888605,
+      "torch_cpu_us": 253.56148591549297,
+      "torch_mps_us": 18.659117797695263,
+      "mlx_gpu_us": 229.03891869398205,
+      "best": "mps"
+    },
+    {
+      "rows": 1024,
+      "threads": 4,
+      "custom_us": 151.43568461538462,
+      "torch_cpu_us": 1488.7198717948718,
+      "torch_mps_us": 110.5545923076923,
+      "mlx_gpu_us": 348.7526692307692,
+      "best": "mps"
+    },
+    {
+      "rows": 4096,
+      "threads": 4,
+      "custom_us": 638.4952783505154,
+      "torch_cpu_us": 6469.753432989691,
+      "torch_mps_us": 574.8088556701031,
+      "mlx_gpu_us": 802.0876288659794,
+      "best": "mps"
+    },
+    {
+      "rows": 16384,
+      "threads": 4,
+      "custom_us": 2725.387125,
+      "torch_cpu_us": 26209.96875,
+      "torch_mps_us": 2536.5381666666667,
+      "mlx_gpu_us": 2695.7829583333337,
+      "best": "mps"
+    }
+  ]
+}

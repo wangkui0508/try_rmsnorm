@@ -1,0 +1,132 @@
+{
+  "no_weight": [
+    {
+      "rows": 1,
+      "threads": 1,
+      "custom_us": 0.730835,
+      "torch_cpu_us": 4.87479,
+      "torch_mps_us": 214.11396,
+      "mlx_gpu_us": 203.09645999999998,
+      "best": "custom"
+    },
+    {
+      "rows": 8,
+      "threads": 1,
+      "custom_us": 2.851875,
+      "torch_cpu_us": 31.627705000000002,
+      "torch_mps_us": 227.926875,
+      "mlx_gpu_us": 204.25625,
+      "best": "custom"
+    },
+    {
+      "rows": 64,
+      "threads": 4,
+      "custom_us": 13.45334,
+      "torch_cpu_us": 90.58916,
+      "torch_mps_us": 291.68667,
+      "mlx_gpu_us": 208.91958,
+      "best": "custom"
+    },
+    {
+      "rows": 256,
+      "threads": 4,
+      "custom_us": 40.49668,
+      "torch_cpu_us": 203.7225,
+      "torch_mps_us": 510.88665999999995,
+      "mlx_gpu_us": 237.16334,
+      "best": "custom"
+    },
+    {
+      "rows": 1024,
+      "threads": 4,
+      "custom_us": 110.7542,
+      "torch_cpu_us": 1343.4833500000002,
+      "torch_mps_us": 1785.97705,
+      "mlx_gpu_us": 368.59585,
+      "best": "custom"
+    },
+    {
+      "rows": 4096,
+      "threads": 4,
+      "custom_us": 735.8458,
+      "torch_cpu_us": 5974.3042000000005,
+      "torch_mps_us": 6741.8207999999995,
+      "mlx_gpu_us": 992.4541999999999,
+      "best": "custom"
+    },
+    {
+      "rows": 16384,
+      "threads": 4,
+      "custom_us": 2998.03125,
+      "torch_cpu_us": 26484.8125,
+      "torch_mps_us": 27110.70825,
+      "mlx_gpu_us": 3070.03125,
+      "best": "custom"
+    }
+  ],
+  "weight": [
+    {
+      "rows": 1,
+      "threads": 1,
+      "custom_us": 0.9254199999999999,
+      "torch_cpu_us": 6.067915,
+      "torch_mps_us": 201.86333,
+      "mlx_gpu_us": 200.48354,
+      "best": "custom"
+    },
+    {
+      "rows": 8,
+      "threads": 1,
+      "custom_us": 3.862705,
+      "torch_cpu_us": 35.952295,
+      "torch_mps_us": 202.01291500000002,
+      "mlx_gpu_us": 199.781665,
+      "best": "custom"
+    },
+    {
+      "rows": 64,
+      "threads": 4,
+      "custom_us": 20.439580000000003,
+      "torch_cpu_us": 112.64541,
+      "torch_mps_us": 217.78332999999998,
+      "mlx_gpu_us": 209.94457999999997,
+      "best": "custom"
+    },
+    {
+      "rows": 256,
+      "threads": 4,
+      "custom_us": 50.22668,
+      "torch_cpu_us": 267.35332,
+      "torch_mps_us": 238.17334,
+      "mlx_gpu_us": 228.7375,
+      "best": "custom"
+    },
+    {
+      "rows": 1024,
+      "threads": 4,
+      "custom_us": 160.59375,
+      "torch_cpu_us": 1773.3917,
+      "torch_mps_us": 405.78540000000004,
+      "mlx_gpu_us": 395.0292,
+      "best": "custom"
+    },
+    {
+      "rows": 4096,
+      "threads": 4,
+      "custom_us": 908.5042,
+      "torch_cpu_us": 7743.475,
+      "torch_mps_us": 904.7666999999999,
+      "mlx_gpu_us": 898.7125,
+      "best": "mlx"
+    },
+    {
+      "rows": 16384,
+      "threads": 4,
+      "custom_us": 3290.58325,
+      "torch_cpu_us": 28605.7395,
+      "torch_mps_us": 2870.6875,
+      "mlx_gpu_us": 2931.427,
+      "best": "mps"
+    }
+  ]
+}

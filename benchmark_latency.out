@@ -1,0 +1,28 @@
+torch 2.13.0  mps=True  cpu_threads=4  N=4096  eps=1e-05
+mode: single-call latency (sync every call)
+
+==============================================================================
+without weight
+  rows |  custom NEON |   torch CPU |  torch MPS |   MLX GPU | best
+------------------------------------------------------------------------------
+     1 |    0.73 us  22 |    4.87 us |  214.11 us |  203.10 us | custom
+     8 |    2.85 us  46 |   31.63 us |  227.93 us |  204.26 us | custom
+    64 |   13.45 us  78 |   90.59 us |  291.69 us |  208.92 us | custom
+   256 |   40.50 us 104 |  203.72 us |  510.89 us |  237.16 us | custom
+  1024 |  110.75 us 151 | 1343.48 us | 1785.98 us |  368.60 us | custom
+  4096 |  735.85 us  91 | 5974.30 us | 6741.82 us |  992.45 us | custom
+ 16384 | 2998.03 us  90 | 26484.81 us | 27110.71 us | 3070.03 us | custom
+
+==============================================================================
+with weight
+  rows |  custom NEON |   torch CPU |  torch MPS |   MLX GPU | best
+------------------------------------------------------------------------------
+     1 |    0.93 us  27 |    6.07 us |  201.86 us |  200.48 us | custom
+     8 |    3.86 us  51 |   35.95 us |  202.01 us |  199.78 us | custom
+    64 |   20.44 us  77 |  112.65 us |  217.78 us |  209.94 us | custom
+   256 |   50.23 us 125 |  267.35 us |  238.17 us |  228.74 us | custom
+  1024 |  160.59 us 157 | 1773.39 us |  405.79 us |  395.03 us | custom
+  4096 |  908.50 us 111 | 7743.48 us |  904.77 us |  898.71 us | mlx
+ 16384 | 3290.58 us 122 | 28605.74 us | 2870.69 us | 2931.43 us | mps
+
+wrote results_latency.json
